@@ -1,0 +1,197 @@
+﻿
+
+
+
+
+
+
+<div class="top-row BGBlackDarkBlue IcySegoeWhite">
+    <a class="IcySegoeWhite"style="font-size:200%;text-shadow:2px 2px 2px white;" href="">Frost Steel Corporation</a>
+   <div class="row">
+  
+</div> 
+    
+<div class="dropdown IcySegoeWhite">
+     <div class="IcySegoeWhite dropbtn" @onclick="ToggleNavMenu">
+            <NavLink class="IcySegoeWhite" Match="NavLinkMatch.All">
+                <span class=" oi oi-home" aria-hidden="true"></span> Menu
+            </NavLink>
+     </div>
+    
+    
+    
+
+    
+    <div class="dropdown-content">
+    
+        <div class="dropright2">
+            
+            
+            <div class="IcySegoeWhite dropbtn2">
+                <NavLink class=""href="Calculon">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Calculon
+                </NavLink>
+            </div>
+            
+            
+                <div class="dropright2-content">
+                        <NavLink class=""href="CalculonChronicles">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> Calculon Chronicles
+                        </NavLink>
+                        <NavLink class=""href="CalculonChronicles2">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> Calculon Chronicles 2
+                        </NavLink>
+        
+               
+                 </div>
+        
+         
+                     
+        
+        
+        
+        
+        
+        </div>
+
+        <div class="dropright3">
+          <div class="dropbtn3">
+            <NavLink class=""href="CSharpTest">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> CSharpTest
+            </NavLink>
+          </div>
+         
+            
+            <div class="dropright3-content">
+                        <NavLink class=""href="CSharpTest2">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> C Sharp Test 2
+                        </NavLink>
+                        <NavLink class=""href="CSharpTest3">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> C Sharp Test 3
+                        </NavLink>
+                        <NavLink class=""href="CSharpTest4">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> C Sharp Test 4
+                        </NavLink>
+                        <NavLink class=""href="CSharpTest5">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> C Sharp Test 5
+                        </NavLink>
+        
+               
+               
+                 </div>
+        
+         </div>
+        
+        
+         <div class="">
+            <NavLink class="" href="AnimateMaster">
+                <span class="oi oi-plus" aria-hidden="true"></span> Animate Master Demo
+            </NavLink>
+        </div>
+          <div class="">
+            <NavLink class="k"href="Nightmare">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Nightmare
+            </NavLink>
+        </div>
+        
+        <div class="">
+            <NavLink class="" href="counter">
+                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+        <div class="">
+            <NavLink class="" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </div>
+        <div class="">
+            <NavLink class=""href="TicTacToe">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> TicTacToe
+            </NavLink>
+        </div>
+      
+      
+        <div class="">
+            <NavLink class=""href="Notes">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Notes
+            </NavLink>
+        </div>
+        <div class="">
+            <NavLink class=""href="Resources">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Resources
+            </NavLink>
+        </div>
+        <div class="">
+            <NavLink class=""href="https://docs.microsoft.com/aspnet/" target="_blank">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Microsoft
+            </NavLink>
+        </div>
+        <div class="">
+            <NavLink class="" href="Survey">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Survey
+            </NavLink>
+        </div>
+        <div class="">
+            <NavLink class=""href="Privacy">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Privacy
+            </NavLink>
+        </div>
+    </div>
+       
+</div>
+
+
+    <svg width="120" height="120" viewBox="0 0 120 120">
+
+        <polygon points="60,30 90,90 30,90" style="fill:rgb(117 132 180);stroke:red;stroke-width:1">
+        <animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 60 70"
+                          to="360 60 70"
+                          dur="0.5s"
+                          repeatCount="indefinite"/>
+        </polygon>
+    </svg>
+
+
+    
+   
+
+
+</div>
+
+
+
+@code {
+    
+    private bool collapseNavMenu = false;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
